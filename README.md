@@ -1,65 +1,84 @@
-Iron Ore Price Forecasting Using Machine Learning 📈-This project aims to forecast Iron Ore Prices enabling industries to make smarter procurement and inventory decisions by minimizing price volatility risks.
+📈 Iron Ore Price Forecasting Using Machine Learning
+This project aims to forecast Iron Ore Prices to help industries make smarter procurement and inventory decisions, ultimately reducing the impact of price volatility in the steel and manufacturing sectors.
 
-✅ Objective- Forecast future iron ore prices using machine learning.Help steel and manufacturing sectors reduce procurement costs and predict market trends.Build a user-friendly tool for interactive prediction and visualization.
+## 🎯 Objective
+Forecast future iron ore prices using machine learning.
 
-🧰 Tech Stack & Tools
+Help steel and manufacturing sectors reduce procurement costs and predict market trends.
 
-🖥 Programming Language:
+Build a user-friendly tool for interactive forecasting and data visualization.
+
+## 🧰 Tech Stack & Tools
+### 🖥 Programming Language
 Python 3.9
 
-🔍 Libraries & Frameworks:
-Data Manipulation: Pandas, NumPy
+## 🔍 Libraries & Frameworks
+Data Manipulation- Pandas,NumPy
 
-Visualization: Matplotlib, Seaborn, Plotly
+Visualization- Matplotlib, Seaborn, Plotly
 
-Modeling & Evaluation: Scikit-learn, Random Forest Regressor
+Modeling & Evaluation- Scikit-learn, Random Forest Regressor
 
-Deployment: Streamlit
+Deployment- Streamlit
 
-Environment: Jupyter Notebook, Spyder
+Development Environment- Spyder
 
-🔄 Step-by-Step Workflow
+## 🔄 Step-by-Step Workflow
+### 1. 📥 Data Collection
+Collected historical iron ore price data (.csv format).
 
-1. 📥 Data Collection
-Collected historical iron ore price data (.csv).
-Included monthly price data over multiple years.
+Included monthly price data spanning several years.
 
-2. 📊 Exploratory Data Analysis (EDA)
-Checked for:
-Missing values
-Outliers
-Seasonality and trends
-Visualizations used:
-Line plots for trend detection
-Correlation heatmaps
-Box plots to detect volatility
+### 2. 📊 Exploratory Data Analysis (EDA)
+Goals:
 
-3. 🧼 Data Preprocessing
-Converted date column to datetime type.
+Detect missing values and outliers
 
-Extracted month, year, and lag features.
+Identify seasonality and long-term trends
 
-Filled missing values using interpolation.
+Tools Used:
 
-Removed extreme outliers based on domain logic.
+Line plots → To analyze price trends over time
 
-Created moving averages (3-month, 6-month).
+Correlation heatmaps → To understand feature relationships
 
-Feature scaling using StandardScaler.
+Box plots → To detect price volatility and distribution
 
-4. 🧠 Model Building: Random Forest
-Used Random Forest Regressor as the final model.
+### 3. 🧼 Data Preprocessing
+Steps Performed:
 
-Reason for choosing:
+Converted Date column to datetime type
 
-Handles non-linearity well
+Extracted:
 
-Robust against overfitting
+Month
 
-Works well with time-dependent engineered features
+Year
 
-5. 📊 Model Evaluation
-Evaluation metrics:
+Lag features (e.g., previous month prices)
+
+Filled missing values using linear interpolation
+
+Removed extreme outliers using domain-specific logic
+
+Created moving average features (3-month, 6-month)
+
+Scaled numerical features using StandardScaler
+
+### 4. 🧠 Model Building – Random Forest Regressor
+Model Chosen: ✅ Random Forest Regressor
+Reason:
+
+Handles non-linear relationships
+
+Resistant to overfitting
+
+Works well with time-series engineered features
+
+Baseline models like Linear Regression were tested but underperformed.
+
+#3# 5. 📊 Model Evaluation
+Metrics Used:
 
 Mean Absolute Error (MAE)
 
@@ -67,58 +86,68 @@ Root Mean Squared Error (RMSE)
 
 R² Score
 
-Observations:
+Results:
 
-Random Forest outperformed baseline models like Linear Regression.
+Achieved R² > 0.85
 
-Residual plots showed no significant bias.
+Residual plots indicated no significant bias
 
-6. 🔧 Hyperparameter Tuning
-Performed tuning using GridSearchCV
+### 6. 🔧 Hyperparameter Tuning
+Used GridSearchCV to find optimal parameters:
 
-Tuned parameters:
+n_estimators – Number of trees
 
-n_estimators (number of trees)
+max_depth – Maximum depth of each tree
 
-max_depth
+min_samples_split – Minimum samples to split an internal node
 
-min_samples_split
+min_samples_leaf – Minimum samples per leaf
 
-min_samples_leaf
+Best parameters were selected based on cross-validated RMSE.
 
-Selected best parameters based on cross-validated RMSE.
+### 7. 📦 Deployment Using Streamlit
+Developed a clean Streamlit interface to:
 
-7. 📦 Deployment Using Streamlit
-Created a Streamlit app to:
+📂 Upload custom CSV datasets
 
-Upload custom CSV
+📈 Visualize historical trends
 
-Visualize data trends
+📊 Predict future iron ore prices
 
-Predict iron ore prices
+📉 Show forecast plots with confidence bands
 
-Display forecast plots with confidence zones
+Status:
+✅ Deployed locally and tested for production-readiness
 
-Deployed locally and tested for production-readiness.
+## 🌟 Key Achievements & Insights
+✅ Final Model: Random Forest Regressor
 
-🧠 Key Achievements & Insights
-Final model: ✅ Random Forest Regressor
+✅ Achieved R² > 0.85, with low MAE and RMSE
 
-Achieved an R² score above 0.85 with low MAE and RMSE.
+✅ Key Findings:
 
-Discovered:
+Seasonal patterns tied to global demand cycles
 
-Seasonal spikes in iron ore prices due to global demand cycles.
+Lag-based and rolling average features improved model performance
 
-Lag-based features significantly improved accuracy.
+## 📌 Streamlit App Features
+📂 Upload historical .csv files
 
-📌 Streamlit App Features
+📈 Interactive trend and forecast graphs
 
-📂 Upload historical CSV file
+📊 Forecasted price with confidence zones
 
-📈 View interactive trend graphs
+🔧 Simple sidebar-based input for quick testing
 
-📊 Show predictions with price bands
 
-📄 Simple sidebar-based input and forecasting options
+
+
+
+
+
+
+
+
+
+
 
