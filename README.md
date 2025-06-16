@@ -77,7 +77,7 @@ Works well with time-series engineered features
 
 Baseline models like Linear Regression were tested but underperformed.
 
-#3# 5. 📊 Model Evaluation
+### 5. 📊 Model Evaluation
 Metrics Used:
 
 Mean Absolute Error (MAE)
