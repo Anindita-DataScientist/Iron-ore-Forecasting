@@ -26,6 +26,7 @@ Development Environment- Spyder
 ## 🔄 Step-by-Step Workflow
 ### 1. 📥 Data Collection
 Collected historical iron ore price data (.csv format).
+From here i have collected the data- "Iron ore fines 62% Fe CFR Futures Historical Data.csv"
 
 Included monthly price data spanning several years.
 
